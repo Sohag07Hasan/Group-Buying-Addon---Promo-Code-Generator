@@ -1,0 +1,40 @@
+div.gb-promocode-div{
+	padding: 8px;
+	height: 28px;
+	background-color: #4D9FAA;
+	-moz-box-shadow: 2px 2px 5px #130505;
+	-webkit-box-shadow: 2px 2px 5px #130505;
+	box-shadow: 2px 2px 5px #130505;
+	font-size: 12px;
+	text-align:center;	
+	color: #FFFFFF;
+}
+
+div.gb-promocode-rm-div{
+	padding: 8px;
+	height: 28px;
+	background-color: #4D9FAA;
+	-moz-box-shadow: 2px 2px 5px #130505;
+	-webkit-box-shadow: 2px 2px 5px #130505;
+	box-shadow: 2px 2px 5px #130505;
+	font-size: 16px;
+	text-align:center;
+	color: #FFFFFF;	
+}
+
+.cart-line-item-new_total{
+	text-decoration: line-through;
+}
+
+div.error{
+	height: 35px;
+	margin: 5px 0 15px;
+	background-color: #FFEBE8;
+	border-color: #CC0000;
+	border-radius: 3px 3px 3px 3px;
+	border-style: solid;
+	padding: 2px;
+	border-width: 1px;
+	font-size:16px;
+	text-align:center;
+}
