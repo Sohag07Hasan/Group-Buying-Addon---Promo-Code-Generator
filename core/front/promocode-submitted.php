@@ -45,6 +45,7 @@ if($code_details){
 			update_post_meta($cart_id,'promocode_status',$meta);
       		
       		$user_meta[] = $code;
+      		
       		update_user_meta($current_user->ID,$meta_key,$user_meta);
       	}      	     	
       		

@@ -509,4 +509,3 @@
 	$PromoCodeAdmin = new group_buying_promocode_settings();
 	
  endif;
-?>
