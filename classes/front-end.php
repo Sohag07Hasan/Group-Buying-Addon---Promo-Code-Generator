@@ -54,17 +54,25 @@
 			add_filter('gb_cart_get_total',array($this,'gb_cart_get_total'),10,2);
 			
 			//FIlters the final payment price into discounted value
-			add_filter('gb_purchase_get_total', array($this, 'gb_purchase_get_total'), 100);
-		}		
+			add_filter('gb_purchase_get_total', array($this, 'gb_purchase_get_total'), 100, 5);
+			
+			
+		}	
 		
 		
 		/*
 		 * Filters the Final Payment.
 		 * directly replace the total value with the discounted valule
+		 * It also filters the affiliate amount to zero
 		 * */
-		function gb_purchase_get_total($total){
+		function gb_purchase_get_total($total, $purchase, $payment_method, $local, $local_billing){
 			if($this->promocode_used){
 				$total = $this->discounted;
+				
+				if($payment_method == Group_Buying_Affiliate_Credit_Payments::PAYMENT_METHOD){
+					$total = 0;
+				}
+				
 			}			
 			return $total;
 		}
